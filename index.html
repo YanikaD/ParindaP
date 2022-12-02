@@ -7,7 +7,7 @@
     <title>Miemie and Mint Website</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet"  href="style.css">
-    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     
@@ -29,7 +29,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#exp" class="nav__link">Experiences</a></li>
-                    <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
           
@@ -40,9 +40,15 @@
         </header>
 
       <header>
-        <h1>Name Here</h1>
-        <p>🚀 Our 1 Year Journey!</p>
-        <!-- <audio type="audio/mp3" src="/VVS.mp3" autoplay></audio> -->
+        <h1 class="home__title">Hello,<br>I'm 
+          <span class="home__title-color">Parinda Pannoon</span>
+          <br>GIS Specialist 🚀
+        </h1>
+        <div class="home__social">
+          <a  class ="button resume" href="{{profile.resume}}" download="YanikaD_Resume.pdf">Resume</a>
+          <a href={{profile.linkedin}} class="home__social-icon left-icon"><i class='bx bxl-linkedin'></i></a>
+          <a href={{profile.github}} class="home__social-icon"><i class='bx bxl-github' ></i></a>
+      </div>
       </header>
       
 
