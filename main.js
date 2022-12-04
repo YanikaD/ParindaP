@@ -13,12 +13,20 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(1920, window.innerHeight);
+renderer.setSize(window.innerWidth, window.innerHeight-10);
 camera.position.setZ(30);
 camera.position.setX(-3);
 
 renderer.render(scene, camera);
 
+// function onWindowResize() {
+//   if (window.innerWidth>1240){
+//     camera.aspect = window.innerWidth / window.innerHeight;
+//     camera.updateProjectionMatrix();
+//     renderer.setSize( window.innerWidth, window.innerHeight-10 );
+//   }
+// }
+// window.addEventListener('resize',onWindowResize);
 // Torus
 // const heartShape = new THREE.Shape();
 
@@ -56,6 +64,7 @@ scene.add(pointLight, ambientLight);
 // scene.add(lightHelper, gridHelper)
 
 // const controls = new OrbitControls(camera, renderer.domElement);
+
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.1, 5, 5);
@@ -100,10 +109,11 @@ const jeff = new GLTFLoader().load(
       scene.add( model);
       let sat = model.getObjectByName('GLTF_SceneRootNode');
       sat.position.y = -5;
-      sat.position.x = 5;
-      sat.position.z = 0;
-      sat.rotation.z = 6;
-      sat.rotation.y = 0.1;
+      sat.position.x = 2;
+      sat.position.z = 0.5;
+      sat.rotation.z = 2.3;
+      sat.rotation.y = -0.32;
+      sat.rotation.x = 1.5;
       // var sat_pos = sat;
     },
     // called while loading is progressing
@@ -172,7 +182,7 @@ scene.add(earth);
 // sat.rotation.z = 6;
 
 earth.position.z = 10;
-earth.position.setX(-20);
+earth.position.setX(-window.innerWidth*0.01);
 
 
 // Scroll Animation
@@ -205,6 +215,9 @@ function animate() {
 
 animate();
 
+const skills = [
+  html, css, js, ts, python, java, sql, angular, react, git, docker, springboot
+  ]
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
