@@ -215,9 +215,6 @@ function animate() {
 
 animate();
 
-const skills = [
-  html, css, js, ts, python, java, sql, angular, react, git, docker, springboot
-  ]
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
