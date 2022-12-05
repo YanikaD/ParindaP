@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parinda</title>
+    <link rel = "icon" href = "logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet"  href="style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +18,7 @@
       <nav class="nav bd-grid">
             
             <div class="nav__logo">
-              <a href="#home" class="nav__logo">
+              <a href="#" class="nav__logo">
                 <img class="cde_logo" src="317965568_2460818614056147_3137039573236411773_n.png" >
                 <div>Parinda</div>
               </a>
@@ -49,7 +50,7 @@
           <div class="home__social">
             <a  class ="button resume" href="CV-Parinda-Pannoon.pdf" download="CV-Parinda-Pannoon.pdf">Resume</a>
             <a href="https://www.linkedin.com/in/parinda-pannoon-62ab5b234" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
-            <a href="#contact" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
+            <a href="mailto: parindapannoon@gmail.com" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
             <!-- parindapannoon@gmail.com -->
           </div>
           <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -81,8 +82,80 @@
         <blockquote>
           <p>Skills</p>
         </blockquote>
-        <div class="info-section">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="skills__container container bd-grid">
+          <!-- <div class="skills__content grid" data-content id="skills"> -->
+            <div class="skills__content">
+              <div class="skills__area">
+                  <!-- <div class="skills__box" *ngFor="let skill of skills"> -->
+                      <div class="skills__group">
+                          <div class="skills__data">
+                              <div>
+                                <img src="arcgis-pro.png" class="skills__img">
+                              </div>  
+                              <div>
+                                  <h3 class="skills__name">ArcGIS Pro</h3>
+                                  <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                              </div>
+                          </div>
+                      </div>
+                      <div class="skills__group">
+                        <div class="skills__data">
+                            <div>
+                          <img src="arcgis-pro.png" class="skills__img">
+                      </div>  
+                            <div>
+                                <h3 class="skills__name">ArcGIS Pro</h3>
+                                <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__group">
+                      <div class="skills__data">
+                          <div>
+                          <img src="arcgis-pro.png" class="skills__img">
+                      </div>  
+                          <div>
+                              <h3 class="skills__name">ArcGIS Pro</h3>
+                              <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- </div> -->
+                  <div class="skills__group">
+                    <div class="skills__data">
+                        <div>
+                          <img src="arcgis-pro.png" class="skills__img">
+                      </div>  
+                        <div>
+                            <h3 class="skills__name">ArcGIS Pro</h3>
+                            <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                      <div>
+                          <img src="arcgis-pro.png" class="skills__img">
+                      </div>  
+                      <div>
+                          <h3 class="skills__name">ArcGIS Pro</h3>
+                          <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                    <div>
+                          <img src="arcgis-pro.png" class="skills__img">
+                      </div>  
+                    <div>
+                        <h3 class="skills__name">ArcGIS Pro</h3>
+                        <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
+                    </div>
+                </div>
+            </div>
+              </div>
+          </div>
         </div>
       </section>
 
@@ -91,20 +164,91 @@
         <blockquote>
           <p>Projects</p>
         </blockquote>
-        <div class="info-section">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="projs__container">
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__img" src="//unsplash.it/400" alt="unsplash random image" />
+              <div class="card__tags">
+                <span class="card__tag">html</span>
+                <span class="card__tag">css</span>
+                <span class="card__tag">javascript</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Awesome Blog Card Inspirations1</h3>
+              <p class="card__detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.             
+              </p>
+              <p class="card__cta">Read more</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__img" src="//unsplash.it/400" alt="unsplash random image" />
+              <div class="card__tags">
+                <span class="card__tag">html</span>
+                <span class="card__tag">css</span>
+                <span class="card__tag">javascript</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Awesome Blog Card Inspirations2</h3>
+              <p class="card__detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p class="card__cta">Read more</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__img" src="//unsplash.it/400" alt="unsplash random image" />
+              <div class="card__tags">
+                <span class="card__tag">html</span>
+                <span class="card__tag">css</span>
+                <span class="card__tag">javascript</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Awesome Blog Card Inspirations3</h3>
+              <p class="card__detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p class="card__cta">Read more</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__img" src="//unsplash.it/400" alt="unsplash random image" />
+              <div class="card__tags">
+                <span class="card__tag">html</span>
+                <span class="card__tag">css</span>
+                <span class="card__tag">javascript</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Awesome Blog Card Inspirations4</h3>
+              <p class="card__detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p class="card__cta">Read more</p>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <div class="l-footer">
         <div class="message bd-grid">
           <div class="left-contact">
             <h1>Message Me</h1>
             <img class="partner_logo" src="314602100_5656430391079369_2593353088300795002_n.gif">
           </div>
-
+        <form id="form"></form>
           <div class="form-body">
                 <div class="form-holder">
                     <div class="form-content">
@@ -113,17 +257,17 @@
                                 <div class="top-row">
                                     <div class="field-wrap form-floating">
                                         <label for="floatingName">Your Name</label>
-                                        <input type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
+                                        <input name="name" type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
                                     </div>
                                     <div class="field-wrap form-floating">
                                         <label for="floatingInput">Email address</label>
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     </div>
                                 </div>
                                 <div class="oth-row">
                                   <div class="field-wrap form-floating">
                                     <label for="floatingMessage">Message</label>
-                                    <textarea type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
+                                    <textarea name="content" type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
                                   </div>
                                 </div>
                                 <div class="oth-row submit-row">
@@ -137,7 +281,7 @@
                 </div>
             </div>
           </div>
-
+        </form>
         </div>
       </div>
     </footer>
@@ -148,5 +292,6 @@
     <script src="https://r105.threejsfundamentals.org/threejs/threejs-responsive.js"></script>
     <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/OrbitControls.js"></script>
+    
   </body>
 </html>

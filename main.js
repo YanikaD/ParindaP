@@ -1,6 +1,7 @@
 import './style.css';
 import * as THREE from 'https://unpkg.com/three@0.146.0/build/three.module.js'; 
 import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 // Setup
 
@@ -13,41 +14,11 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight-10);
+renderer.setSize(window.innerWidth, window.innerHeight+1);
 camera.position.setZ(30);
 camera.position.setX(-3); 
 
 renderer.render(scene, camera);
-
-// function onWindowResize() {
-//   if (window.innerWidth>1240){
-//     camera.aspect = window.innerWidth / window.innerHeight;
-//     camera.updateProjectionMatrix();
-//     renderer.setSize( window.innerWidth, window.innerHeight-10 );
-//   }
-// }
-// window.addEventListener('resize',onWindowResize);
-// Torus
-// const heartShape = new THREE.Shape();
-
-// const x = -2.5;
-// const y = -5;
-// heartShape.moveTo((x + 2.5)/2, (y + 2.5)/2);
-// heartShape.bezierCurveTo((x + 2.5)/2, (y + 2.5)/2, (x + 2)/2, (y)/2, (x)/2, (y)/2);
-// heartShape.bezierCurveTo((x - 3)/2, (y)/2, (x - 3)/2, (y + 3.5)/2, (x - 3)/2, (y + 3.5)/2);
-// heartShape.bezierCurveTo((x - 3)/2, (y + 5.5)/2, (x - 1.5)/2, (y + 7.7)/2, (x + 2.5)/2, (y + 9.5)/2);
-// heartShape.bezierCurveTo((x + 6)/2, (y + 7.7)/2, (x + 8)/2, (y + 4.5)/2, (x + 8)/2, (y + 3.5)/2);
-// heartShape.bezierCurveTo((x + 8)/2, (y + 3.5)/2, (x + 8)/2, (y)/2, (x + 5)/2, (y)/2);
-// heartShape.bezierCurveTo((x + 3.5)/2, (y)/2, (x + 2.5)/2, (y + 2.5)/2, (x + 2.5)/2, (y + 2.5)/2);
-// const extrudeSettings = { depth: 0.5, bevelEnabled: true, bevelSegments: 1, steps: 1, bevelSize: 0.5, bevelThickness: 0.5 };
-
-// const geometry = new THREE.ExtrudeGeometry( heartShape, extrudeSettings );
-// const geometry = new THREE.ShapeGeometry(shape, curveSegments);
-// const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-// const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-// const torus = new THREE.Mesh(geometry, material);
-
-// scene.add(torus);
 
 // Lights
 
@@ -67,7 +38,7 @@ scene.add(pointLight, ambientLight);
 
 
 function addStar() {
-  const geometry = new THREE.SphereGeometry(0.1, 5, 5);
+  const geometry = new THREE.SphereGeometry(0.2, 5, 5);
   const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
   const star = new THREE.Mesh(geometry, material);
 
@@ -108,9 +79,9 @@ const jeff = new GLTFLoader().load(
       const model = gltf.scene;
       scene.add( model);
       let sat = model.getObjectByName('GLTF_SceneRootNode');
-      sat.position.y = -6;
-      sat.position.x = 2.5;
-      sat.position.z = 1;
+      sat.position.y = -7;
+      sat.position.x = 2;
+      sat.position.z = 0;
       sat.rotation.z = 2.3;
       sat.rotation.y = -0.4;
       sat.rotation.x = 1.5;
@@ -129,7 +100,8 @@ const jeff = new GLTFLoader().load(
 
     }
 );
-console.log(jeff);
+window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+// console.log(jeff);
 // var sat;
 //   {
 //     const gltfLoader = new GLTFLoader();
@@ -182,7 +154,7 @@ scene.add(earth);
 // sat.rotation.z = 6;
 
 earth.position.z = 10;
-earth.position.setX(-window.innerWidth*0.01);
+earth.position.setX(-10);
 
 
 // Scroll Animation
@@ -209,7 +181,6 @@ function animate() {
   requestAnimationFrame(animate);
 
   earth.rotation.x += 0.0025;
-
   renderer.render(scene, camera);
 }
 
@@ -258,3 +229,19 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+document.querySelector('button').addEventListener('click', (e)=>{
+  e.preventDefault();
+  const contactForm = document.querySelector('#form');
+  const name = document.querySelector('[name="name"]');
+  const email = document.querySelector('[name="email"]');
+  const message = document.querySelector('[name="content"]');
+  // validation before sending the data
+  if(name.value.length===0 || name.value.length===0 || name.value.length===0){
+    alert('please fill the inputs')
+  }else{
+    let data = new FormData(contactForm);  
+    fetch("parindapannoon@gmail.com", { method: "POST", body: data });
+    alert('Thank you. your form was submited');
+    contactForm.reset()
+  }
+})
