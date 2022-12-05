@@ -13,23 +13,22 @@
     
     <canvas class="bg"></canvas>   
 
-    <main>
-      
-      
-      <!-- <embed name="lostmojo" src="/VVS.mp3" width="5" height="7" loop="true" autostart="true"> -->
-        <div class="l-header">
-          <nav class="nav bd-grid">
+    <header class="l-header">
+      <nav class="nav bd-grid">
             
             <div class="nav__logo">
-              <a href="#" class="nav__logo"><img class="cde_logo" src="317965568_2460818614056147_3137039573236411773_n.png" >Parinda</a>
+              <a href="#home" class="nav__logo">
+                <img class="cde_logo" src="317965568_2460818614056147_3137039573236411773_n.png" >
+                <div>Parinda</div>
+              </a>
             </div>
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#exp" class="nav__link">Experiences</a></li>
-                    <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                    <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
                 </ul>
             </div>
           
@@ -37,47 +36,38 @@
                 <i class='bx bx-menu'></i>
             </div>
           </nav>
-        </div>
-
-      <header>
-        <h1 class="home__title">Hello,<br>I'm 
-          <span class="home__title-color">Parinda Pannoon</span>
-        </h1>
-        <h3 class="home__pos">GIS Specialist 🚀</h3>
-        <div class="home__social">
-          <a  class ="button resume" href="CV-Parinda-Pannoon.pdf" download="CV-Parinda-Pannoon.pdf">Resume</a>
-          <a href="https://www.linkedin.com/in/parinda-pannoon-62ab5b234" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
-          <a href="#contact" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
-          <!-- parindapannoon@gmail.com -->
-        </div>
-        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha">
-              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-          </mask>
-          <g mask="url(#mask0)">
-              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-              <!-- <image class="home__blob-img" href="Memie4-removebg-preview.png"/> -->
-              <image class="home__blob-img" href="Subject.png">
-          </g>
-        </svg>
-      </header>
-      
-      <!-- <div class="home_profile"> -->
-          
-      <!-- </div> -->
-      
-      <section class="home section" id="home">
-        <blockquote >
-          <p>Home</p>
-        </blockquote>
-        <div class="info-section">
-          <img class="konsuay" src="IMG_1548.jpg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </div>
+    </header>
+    
+    <main>
+       <!-- ===== HOME =====  -->
+      <section class="home bd-grid" id="home">  
+        <div class="home__container"> 
+          <h1 class="home__title">Hello,<br>I'm 
+            <span class="home__title-color">Parinda Pannoon</span>
+          </h1>
+          <h3 class="home__pos">GIS Specialist 🚀</h3>
+          <div class="home__social">
+            <a  class ="button resume" href="CV-Parinda-Pannoon.pdf" download="CV-Parinda-Pannoon.pdf">Resume</a>
+            <a href="https://www.linkedin.com/in/parinda-pannoon-62ab5b234" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+            <a href="#contact" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
+            <!-- parindapannoon@gmail.com -->
+          </div>
+          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+            </mask>
+            <g mask="url(#mask0)">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                <!-- <image class="home__blob-img" href="Memie4-removebg-preview.png"/> -->
+                <image class="home__blob-img" href="Subject.png">
+            </g>
+          </svg>
+        </div> 
       </section>
-      
-      
-      <section class="about section light" id="about">
+
+      <!-- ===== ABOUT =====  -->
+      <section class="about section bd-grid" id="about">   
+        <!-- <h2 class="section-title">About Me</h2> -->
         <blockquote>
           <p>About</p>
         </blockquote>
@@ -86,151 +76,73 @@
         </div>
       </section>
 
-      
-      
-      <section class="skills section light" id="skills">
+      <!-- ===== SKILLS =====  -->
+      <section class="skills section bd-grid" id="skills">
         <blockquote>
           <p>Skills</p>
         </blockquote>
-        <div class="skills__container grid">
-          <!-- <div class="skills__content grid" data-content id="skills"> -->
-          <div class="skills__content">
-              <div class="skills__area">
-                  <!-- <div class="skills__box" *ngFor="let skill of skills"> -->
-                      <div class="skills__group">
-                          <div class="skills__data">
-                              <img src="arcgis-pro.png" class="skills__img">
-                              <div>
-                                  <h3 class="skills__name">ArcGIS Pro</h3>
-                                  <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                              </div>
-                          </div>
-                      </div>
-                      <div class="skills__group">
-                        <div class="skills__data">
-                            <img src="arcgis-pro.png" class="skills__img">
-                            <div>
-                                <h3 class="skills__name">ArcGIS Pro</h3>
-                                <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__group">
-                      <div class="skills__data">
-                          <img src="arcgis-pro.png" class="skills__img">
-                          <div>
-                              <h3 class="skills__name">ArcGIS Pro</h3>
-                              <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                          </div>
-                      </div>
-                  </div>
-                  <!-- </div> -->
-                  <div class="skills__group">
-                    <div class="skills__data">
-                        <img src="arcgis-pro.png" class="skills__img">
-                        <div>
-                            <h3 class="skills__name">ArcGIS Pro</h3>
-                            <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                      <img src="arcgis-pro.png" class="skills__img">
-                      <div>
-                          <h3 class="skills__name">ArcGIS Pro</h3>
-                          <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                      </div>
-                  </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__data">
-                    <img src="arcgis-pro.png" class="skills__img">
-                    <div>
-                        <h3 class="skills__name">ArcGIS Pro</h3>
-                        <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
-                    </div>
-                </div>
-            </div>
-              </div>
-          </div>
-      </div>
-      </section>
-
-      
-      
-      <section class="exp section light" id="exp">
-        <blockquote>
-        <p>Experiences</p>
-      </blockquote>
         <div class="info-section">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
       </section>
 
-      <section class="contact" id="contact">    
-      <div class="message">
-        <div class="left-contact">
-          <br>
-          <h1>Message Me</h1>
-          <br>
-          <img class="partner_logo" src="314602100_5656430391079369_2593353088300795002_n.gif">
+      <!-- ===== PROJECTS =====  -->
+      <section class="proj section bd-grid" id="proj">
+        <blockquote>
+          <p>Projects</p>
+        </blockquote>
+        <div class="info-section">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-      </div>
-        <div class="form-body left">
-          <!-- <div class="row"> -->
-              <div class="form-holder">
-                  <div class="form-content">
-                      <div class="form-items">
-                          <!-- <h3>Message Me</h3> -->
-                          <form class="requires-validation" novalidate>
-                              <div class="top-row">
-                                  <div class="field-wrap form-floating">
-                                      <label for="floatingName">Your Name</label>
-                                      <input type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
-                                  </div>
-                              
-                                  <div class="field-wrap form-floating">
-                                      <label for="floatingInput">Email address</label>
-                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                  </div>
-                              </div>
-                              <!-- <div class="oth-row">
-                                <div class="field-wrap form-floating ">
-                                  <input type="text" class="form-control" id="floatingSubject" placeholder="Subject">
-                                  <label for="floatingSubject">Subject</label>
-                                </div>
-                              </div> -->
-                              <div class="oth-row">
-                                <div class="field-wrap form-floating">
-                                  <label for="floatingMessage">Message</label>
-                                  <textarea type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
-                                </div>
-                              </div>
-                              <div class="oth-row submit-row">
-                                  <div class="form-button mt-3" id="submit">
-                                      <button  type="submit" class="btn btn-primary">Send</button>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          <!-- </div> -->
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
-    
-    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.146.0/build/three.module.js"
-        }
-      }
-    </script> -->
+    <footer>
+      <div class="l-footer">
+        <div class="message bd-grid">
+          <div class="left-contact">
+            <h1>Message Me</h1>
+            <img class="partner_logo" src="314602100_5656430391079369_2593353088300795002_n.gif">
+          </div>
+
+          <div class="form-body">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <form class="requires-validation" novalidate>
+                                <div class="top-row">
+                                    <div class="field-wrap form-floating">
+                                        <label for="floatingName">Your Name</label>
+                                        <input type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
+                                    </div>
+                                    <div class="field-wrap form-floating">
+                                        <label for="floatingInput">Email address</label>
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="oth-row">
+                                  <div class="field-wrap form-floating">
+                                    <label for="floatingMessage">Message</label>
+                                    <textarea type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
+                                  </div>
+                                </div>
+                                <div class="oth-row submit-row">
+                                    <div class="form-button mt-3" id="submit">
+                                        <button  type="submit" class="btn button btn-primary">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+   
+    
     <script type="module" src="main.js"></script>
     <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
     <script src="https://r105.threejsfundamentals.org/threejs/threejs-responsive.js"></script>

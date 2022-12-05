@@ -15,7 +15,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight-10);
 camera.position.setZ(30);
-camera.position.setX(-3);
+camera.position.setX(-3); 
 
 renderer.render(scene, camera);
 
@@ -108,11 +108,11 @@ const jeff = new GLTFLoader().load(
       const model = gltf.scene;
       scene.add( model);
       let sat = model.getObjectByName('GLTF_SceneRootNode');
-      sat.position.y = -5;
-      sat.position.x = 2;
-      sat.position.z = 0.5;
+      sat.position.y = -6;
+      sat.position.x = 2.5;
+      sat.position.z = 1;
       sat.rotation.z = 2.3;
-      sat.rotation.y = -0.32;
+      sat.rotation.y = -0.4;
       sat.rotation.x = 1.5;
       // var sat_pos = sat;
     },
