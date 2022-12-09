@@ -158,6 +158,19 @@ blockquote p {
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--second-color);
+    transition: .5s;
+  }
+}
+
 .nav__list {
   display: flex;
   padding-top: 0;
@@ -287,9 +300,9 @@ blockquote p {
 
 .home__blob-img {
   margin-left: 300px;
-  height: 480px;
-  x: 80px;
-  y: 80px;
+  width: 1200px;
+  x: -320px;
+  y: -250px;
 }
 .resume:hover{
   color: #000;
@@ -585,11 +598,12 @@ blockquote p {
   width: 80%;
 }
 .form-body{
-  width: 600px;
+  height: 300px;
+  width: 500px;
   justify-items: center;
-  align-items: center;
   display: flex;
-  align-content: space-around;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .form-holder{
   width: 90%;
@@ -626,3 +640,23 @@ input,textarea {
   resize: none;
   width: 100%;
 }
+
+/* ===== MEDIA QUERIES=====*/
+
+@media screen and (max-width: 992px){
+  /* 768-992px */
+  
+}
+@media screen and (max-width: 768px) {
+  /* 576-768px */
+}
+@media screen and (max-width: 576px) {
+  /* 320-576px */
+}
+@media screen and (max-width: 320px) {
+
+}
+
+
+
+
