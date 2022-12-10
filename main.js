@@ -54,7 +54,7 @@ Array(600).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('201698ccba4abed5efc67329231d9d64.jpg');
+const spaceTexture = new THREE.TextureLoader().load('stars-2179083_960_720 (1).jpg');
 scene.background = spaceTexture;
 
 function dumpObject(obj, lines = [], isLast = true, prefix = '') {
