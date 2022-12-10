@@ -28,8 +28,10 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#background" class="nav__link">Background</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#achieve" class="nav__link">Achievement</a></li>
                 </ul>
             </div>
           
@@ -46,8 +48,7 @@
           <h1 class="home__title">Hello,<br>I'm 
             <span class="home__title-color">Parinda Pannoon</span>
           </h1>
-          <h3 class="home__pos">Geo-visualization &</h3>
-          <h3 class="home__pos">Geo-communication 🚀</h3>
+          <h3 class="home__pos">Geo-visualization & <br> Geo-communication 🚀</h3>
           <div class="home__social">
             <a  class ="button resume" href="CV-Parinda-Pannoon.pdf" download="CV-Parinda-Pannoon.pdf">Curriculum vitae</a>
             <a href="https://www.linkedin.com/in/parinda-pannoon-62ab5b234" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
@@ -70,39 +71,49 @@
       <!-- ===== ABOUT =====  -->
       <section class="about section bd-grid" id="about">   
         <!-- <h2 class="section-title">About Me</h2> -->
-        <blockquote>
-          <p>About Me</p>
-        </blockquote>
-        <div class="info-section">
-          <img src="307973074_549780023815483_8461132865242581018_n.jpg" class="background__imgabout1">
-          <img src="S__9576490.jpg" class="background__imgabout2">
-          My name is Parinda. I come from Thailand. I am an open-minded and flexible person. I am really passionate about geoinformatics and always keen to up-skill myself by learning new things. 
-Currently, I am a master’s degree student under Erasmus Mundus Copernicus Master’s in Digital Earth at University of Salzburg and Palacký University Olomouc, Czech Republic. I am in Geo-visualization and Geo-communication track. 
-          
+        <div class="section_header">
+          <p class="about_head">About Me</p>
         </div>
-        
+          <div class="info-section about_container">
+            <div class="about_text">
+              My name is Parinda. I come from Thailand. I am an open-minded and flexible person. I am really passionate about geoinformatics and always keen to up-skill myself by learning new things. 
+    Currently, I am a master’s degree student under Erasmus Mundus Copernicus Master’s in Digital Earth at University of Salzburg and Palacký University Olomouc, Czech Republic. I am in Geo-visualization and Geo-communication track. 
+            </div>
+            <div class="about_img_container">
+              <img src="307973074_549780023815483_8461132865242581018_n.jpg" class="background__imgabout1">
+              <img src="S__9576490.jpg" class="background__imgabout2">
+            </div>  
+        </div>
       </section>
 
       <!-- ===== BACKGROUND =====  -->
-      <section class="about section bd-grid" id="about">   
+      <section class="about section bd-grid" id="background">   
         <!-- <h2 class="section-title">About Me</h2> -->
-        <blockquote>
-          <p>Background</p>
-        </blockquote>
+        <div class="section_header">
+          <p class="bg_head">Background</p>
+        </div>
         <div class="info-sectionbackgroundcu">
-          <h3 class="card__title">Academic Background</h3>
-          <img src="logo_eng.jpeg" class="background__imgcu">
-          1. Bachelor's Degree -- Bachelor of Arts, Faculty of Arts, Chulalongkorn University    
-            [ 28/07/2016 – 08/06/2020 ]
-        
-        <div class="info-sectionbackgroundsz">
-          <img src="1200px-Logo_der_Universität_Salzburg.jpg" class="background__imgsz">
-          2.Master’s degree-- Copernicus Master’s in Digital Earth, University of Salzburg [03/10/2022-current]
-        
-        <div class="info-sectionbackgroundpl">
-          <img src="UP_logo_horizont_en.png" class="background__imgpl">
-          --Palacký University Olomouc : Geovisualization and Geocommunication track [second year]
-        
+          <h2 class="card__title">Academic Background</h2>
+          <ul class="timeline">
+            <li class="event" data-date="28/07/2016 – 08/06/2020 ">
+              <h3>Bachelor's Degree</h3>
+              <img src="logo_eng.jpeg" class="background__imgcu">
+              <p>Bachelor of Arts, Faculty of Arts, Chulalongkorn University</p>
+            </li>
+            <li class="event" data-date="03/10/2022-current">
+              <h3>Master’s's Degree</h3>
+              <h4>Copernicus Master’s in Digital Earth</h4>
+              <img src="1200px-Logo_der_Universität_Salzburg.jpg" class="background__imgsz">
+              <p>University of Salzburg</p>
+            </li>
+            <li class="event" data-date="second year">
+              <h3>Master’s's Degree</h3>
+              <h4>Copernicus Master’s in Digital Earth</h4>
+              <img src="UP_logo_horizont_en.png" class="background__imgpl">
+              <p>Palacký University Olomouc : Geovisualization and Geocommunication track </p>
+            </li>
+          </ul>
+
         <h3 class="card__title">Professional Background</h3>
         1.GIS Specialist-- Research Unit, Chulalongkorn University [ 15/10/2020 – 15/09/2022 ]
         2.Cartographer-- Chulalongkorn University [ 10/06/2021 – 12/10/2021]
@@ -112,9 +123,9 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
 
       <!-- ===== SKILLS =====  -->
       <section class="skills section bd-grid" id="skills">
-        <blockquote>
-          <p>Skills</p>
-        </blockquote>
+        <div class="section_header">
+          <p class="skills_head">Skills</p>
+        </div>
         <div class="skills__container container bd-grid">
           <!-- <div class="skills__content grid" data-content id="skills"> -->
             <div class="skills__content">
@@ -125,7 +136,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                               <div class="skills_img_container">
                                 <img src="earth-engine-logo.png" class="skills__img">
                               </div>  
-                              <div>
+                              <div class="skills_name_container">
                                   <h3 class="skills__name">Google Earth Engine</h3>
                                   <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                               </div>
@@ -136,7 +147,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                             <div class="skills_img_container">
                           <img src="ecognition.png" class="skills__img">
                           </div>  
-                            <div>
+                            <div class="skills_name_container">
                                 <h3 class="skills__name">eCognition</h3>
                                 <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                             </div>
@@ -147,7 +158,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                           <div class="skills_img_container">
                             <img src="arcgis-pro.jpeg" class="skills__img">
                           </div>  
-                          <div>
+                          <div class="skills_name_container">
                               <h3 class="skills__name">ArcGIS Pro</h3>
                               <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                           </div>
@@ -159,7 +170,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                         <div class="skills_img_container">
                           <img src="arcgis-online-banner-icon_0.png" class="skills__img">
                       </div>  
-                        <div>
+                        <div class="skills_name_container">
                             <h3 class="skills__name">ArcGIS Online</h3>
                             <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                         </div>
@@ -170,7 +181,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                       <div class="skills_img_container">
                           <img src="logoQgis.png" class="skills__img">
                       </div>  
-                      <div>
+                      <div class="skills_name_container">
                           <h3 class="skills__name">QGIS</h3>
                           <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                       </div>
@@ -181,7 +192,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                     <div class="skills_img_container">
                           <img src="pg.png" class="skills__img">
                       </div>  
-                    <div>
+                    <div class="skills_name_container">
                         <h3 class="skills__name">PostgreSQL</h3>
                         <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                     </div>
@@ -192,7 +203,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                   <div class="skills_img_container">
                     <img src="Python-logo-notext.svg.png" class="skills__img">
                   </div>  
-                  <div>
+                  <div class="skills_name_container">
                       <h3 class="skills__name">Python</h3>
                       <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                   </div>
@@ -203,7 +214,7 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
                 <div class="skills_img_container">
                   <img src="adobe-illustrator-versus-photoshop-differences.jpg" class="skills__img">
                 </div>  
-                <div>
+                <div class="skills_name_container">
                     <h3 class="skills__name">Adobe PS/AI</h3>
                     <!-- <span class="skills__level">{{skill.skill_lvl}}</span> -->
                 </div>
@@ -221,9 +232,9 @@ Currently, I am a master’s degree student under Erasmus Mundus Copernicus Mast
 
       <!-- ===== PROJECTS =====  -->
       <section class="proj section bd-grid" id="proj">
-        <blockquote>
-          <p>Projects</p>
-        </blockquote>
+        <div class="section_header">
+          <p class="project_head">Projects</p>
+        </div>
         <div class="projs__container">
           <a href="https://arcg.is/0HaLbX" target="_blank" rel="noopener noreferrer" class="card">
             <div class="card__img-container">
@@ -418,10 +429,10 @@ also elevation and slope.
     </section>
 
     <!-- ===== Achievement =====  -->
-    <section class="proj section bd-grid" id="proj">
-      <blockquote>
-        <p>Achievement</p>
-      </blockquote>
+    <section class="proj section bd-grid" id="achieve">
+      <div class="section_header">
+        <p class="achieve_head">Achievement</p>
+      </div>
       <div class="projs__container">
         <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" rel="noopener noreferrer" class="card">
           <div class="card__img-container">
