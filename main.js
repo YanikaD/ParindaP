@@ -138,7 +138,7 @@ const earthTexture = new THREE.TextureLoader().load('earth.jpg');
 // const normalTexture = new THREE.TextureLoader().load('Earth.png');
 
 const earth = new THREE.Mesh(
-  new THREE.SphereGeometry(6, 30, 30),
+  new THREE.SphereGeometry(30, 30, 30),
   new THREE.MeshStandardMaterial({
     map: earthTexture,
     // normalMap: normalTexture,
@@ -153,8 +153,8 @@ scene.add(earth);
 // sat.position.z = 0;
 // sat.rotation.z = 6;
 
-earth.position.z = 10;
-earth.position.setX(-10);
+earth.position.z = 30;
+earth.position.setX(-40);
 
 
 // Scroll Animation

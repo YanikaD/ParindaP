@@ -380,6 +380,7 @@ blockquote p {
 .background__imgcu{
 width: 190px;
 height: 70px;
+margin: 10px;
 }
 
 .background__imgsz{
@@ -409,6 +410,11 @@ height: 70px;
 .about_text{
   padding: 11.9px;
 }
+.about__title{
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 15px;
+}
 .info-section{
   color: #000;
   background: white;
@@ -427,16 +433,17 @@ height: 70px;
   background: white;
   font-size: 20px;
   padding: 2rem;
+  margin-left: 20px;
   /* margin-top: 10vh; */
   /* width: 900px; */
-  height: 1100px;
+  height: 1500px;
   width: 900px;
   border-radius: 25px;
   opacity: 0.9;
 }
 
 .timeline {
-  border-left: 4px solid #4298C3;
+  border-left: 4px solid var(--first-color);
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   background:white;
@@ -451,7 +458,7 @@ height: 70px;
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 90%;
+  max-width: 60%;
 }
 .timeline h1, .timeline h2, .timeline h3 {
   font-family: 'Oswald', sans-serif;
@@ -464,6 +471,7 @@ height: 70px;
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
+  width: 600px;
 }
 .timeline .event:last-of-type {
   padding-bottom: 0;
@@ -477,24 +485,31 @@ height: 70px;
   top: 0;
 }
 .timeline .event:before {
-  left: -217.5px;
-  color: rgba(255,255,255,0.4);
+  left: -214.5px;
+  top: -4px;
+  color: black;
   content: attr(data-date);
   text-align: right;
-  font-weight: 100;
-  font-size: 0.9em;
-  min-width: 120px;
+  font-weight: 400;
+  font-size: 13px;
+  width: 145px;
 }
 .timeline .event:after {
-  box-shadow: 0 0 0 4px #4298c3;
+  box-shadow: 0 0 0 4px var(--first-color);
   left: -57.85px;
-  background: #313534;
+  background: white;
   border-radius: 50%;
   height: 11px;
   width: 11px;
   content: "";
   top: 5px;
 }
+.uni_title{
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+
 /*===== SKILLS =====*/
 .skills__container {
   padding-top: 20px;
