@@ -179,7 +179,7 @@ blockquote p {
 .nav__item {
   margin-left: var(--mb-6);
   margin-bottom: 0;
-  font-size: var(--big-font-size);
+  font-size: 16px;
 }
 
 .nav__link {
@@ -228,7 +228,7 @@ blockquote p {
   padding-left: 20px;
 }
 .info-section{
-  margin-left: 75px;
+  margin-left: 20px;
   color: #000;
   background: white;
   font-size: 20px;
@@ -409,6 +409,7 @@ margin: 10px;
 }
 .about_text{
   padding: 11.9px;
+  font-size: 20px;
 }
 .about__title{
   padding-top: 20px;
@@ -422,8 +423,8 @@ margin: 10px;
   padding: 2rem;
   /* margin-top: 10vh; */
    width: 800px;
-  height: 500px;
-  width: 600px;
+  height: 420px;
+  width: 750px;
   border-radius: 25px;
   opacity: 0.9;
 }
@@ -436,7 +437,7 @@ margin: 10px;
   margin-left: 20px;
   /* margin-top: 10vh; */
   /* width: 900px; */
-  height: 1500px;
+  height: 1400px;
   width: 900px;
   border-radius: 25px;
   opacity: 0.9;
@@ -505,11 +506,24 @@ margin: 10px;
   top: 5px;
 }
 .uni_title{
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 5px;
+  font-size: 19px;
+}
+.event_head{
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 22px;
+}
+.event_subhead{
+  font-weight: 500;
+  font-size: 20px;
 }
 
-
+.event_content{
+  font-weight: 300;
+  font-size: 18px;
+}
 /*===== SKILLS =====*/
 .skills__container {
   padding-top: 20px;
