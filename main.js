@@ -14,7 +14,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight+1);
+renderer.setSize(window.innerWidth, window.innerHeight*1.01);
 camera.position.setZ(30);
 camera.position.setX(-3); 
 
@@ -138,7 +138,7 @@ const earthTexture = new THREE.TextureLoader().load('earth.jpg');
 // const normalTexture = new THREE.TextureLoader().load('Earth.png');
 
 const earth = new THREE.Mesh(
-  new THREE.SphereGeometry(30, 30, 30),
+  new THREE.SphereGeometry(30, 32, 32),
   new THREE.MeshStandardMaterial({
     map: earthTexture,
     // normalMap: normalTexture,

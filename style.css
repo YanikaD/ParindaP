@@ -604,8 +604,8 @@ margin: 10px;
 }
 
 .skills__img {
-  width: 95%;
-  max-height: 95%;
+  max-width: 171px;;
+  max-height: 135px;
   /* height: 150px; */
 }
 
@@ -885,6 +885,11 @@ input,textarea {
       align-items: center;
       grid-template-columns: repeat(3, 180px);
       gap: 40px;
+      .skills__img {
+        width: 85%;
+        max-height: 85%;
+        /* height: 150px; */
+      }
     }
     .timeline .event:before {
       left: -214.5px;
