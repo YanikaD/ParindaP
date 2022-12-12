@@ -153,7 +153,7 @@ blockquote p {
 
 .nav__menu{
   padding-right: 20px;
-  /* height: var(--header-height); */
+  height: calc(var(--header-height) + 2.5rem);
   padding-top: 0;
   background-color: #fff;
 }
@@ -161,19 +161,19 @@ blockquote p {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-height) + 2.5rem);
     right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: white;
     transition: .5s;
   }
 }
 
 .nav__list {
   display: flex;
-  padding-top: 0;
+  padding-top: 20px;
 }
 
 .nav__item {
@@ -350,9 +350,6 @@ blockquote p {
 
 .home__blob-img {
   margin-left: 300px;
-  width: 1200px;
-  x: -320px;
-  y: -350px;
 }
 
 .resume:hover{
@@ -908,6 +905,58 @@ input,textarea {
     }
 }
 
+/* @media screen and (max-width: 767px){
+  //576-767px
+  .nav__logo {
+    display: flex;
+    color: var(--second-color);
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none; 
+    //margin-right: 10%;
+    width: 55%;
+    align-items: flex-end;
+  }
 
+  .cde_logo{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav {
+    // width: 100vw; 
+    height: calc(var(--header-height) + 2.5rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: var(--font-semi);
+    //padding-left: 6vw;
+  }
+  .nav__toggle {
+    color: var(--second-color);
+    font-size: 3rem;
+    cursor: pointer;
+    display: inherit;
+    margin-left: 100px;
+  }
+  .nav__list {
+    display: inline-grid;
+    padding-top: 0;
+  }
+  .active::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.3rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+    margin-top: -1px;
+  }
+} */
+/* 
+@media screen and (max-width: 575px){
+  320-575px
+}
 
-
+@media screen and (max-width: 320px){
+  >320px
+} */
